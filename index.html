@@ -20,7 +20,7 @@ body{
   color:#fff;
 }
 
-/* NAVBAR */
+/* NAV */
 nav{
   display:flex;
   justify-content:space-between;
@@ -31,9 +31,7 @@ nav{
   top:0;
 }
 
-nav h2{
-  color:#38bdf8;
-}
+nav h2{color:#38bdf8;}
 
 nav a{
   color:#aaa;
@@ -41,33 +39,32 @@ nav a{
   text-decoration:none;
 }
 
-nav a:hover{
-  color:#38bdf8;
-}
+nav a:hover{color:#38bdf8;}
 
 /* HERO */
 .hero{
   display:grid;
   grid-template-columns:1fr 1.2fr 1fr;
-  height:100vh;
   align-items:center;
-  padding:0 60px;
+  padding:60px;
 }
 
 .left h1{
-  font-size:60px;
+  font-size:55px;
   color:#38bdf8;
 }
 
-.left p{
-  margin-top:15px;
-  color:#aaa;
+.center{
+  display:flex;
+  justify-content:center;
 }
 
 .center img{
-  width:350px;
-  border-radius:15px;
-  box-shadow:0 0 40px rgba(56,189,248,0.3);
+  width:280px;
+  height:360px;
+  object-fit:cover;
+  border-radius:20px;
+  box-shadow:0 0 30px rgba(56,189,248,0.3);
 }
 
 .right{
@@ -75,57 +72,66 @@ nav a:hover{
 }
 
 .right h2{
-  font-size:55px;
+  font-size:40px;
   color:#38bdf8;
-}
-
-.right p{
-  margin-top:15px;
-  color:#aaa;
 }
 
 .btn{
-  padding:12px 25px;
+  padding:10px 20px;
   border:1px solid #38bdf8;
+  background:none;
   color:#38bdf8;
-  background:transparent;
-  margin-top:20px;
-  margin-right:10px;
+  margin-top:15px;
   cursor:pointer;
 }
 
 .btn:hover{
   background:#38bdf8;
-  color:black;
+  color:#000;
 }
 
 /* SECTION */
 .section{
-  padding:80px 60px;
+  padding:60px;
 }
 
+.section h2{
+  margin-bottom:20px;
+}
+
+/* CARD */
 .card{
   background:#0f172a;
   padding:20px;
-  margin-top:20px;
-  border-radius:12px;
+  border-radius:15px;
   border:1px solid #1e293b;
 }
 
+/* GRID */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:20px;
 }
 
-.highlight{
-  color:#38bdf8;
+/* IMAGE */
+.achievement{
+  display:flex;
+  justify-content:center;
+  margin-top:20px;
 }
 
-img{
+.achievement img{
   width:100%;
-  border-radius:10px;
+  max-width:600px;
+  height:350px;
+  object-fit:cover;
+  border-radius:15px;
 }
+
+.highlight{color:#38bdf8;}
+
+ul{margin-top:10px; padding-left:20px;}
 </style>
 </head>
 
@@ -138,6 +144,7 @@ img{
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -151,16 +158,12 @@ img{
 </div>
 
 <div class="center">
-  <!-- YOUR MAIN IMAGE -->
   <img src="https://i.ibb.co/358rfhd4/your-image.jpg">
 </div>
 
 <div class="right">
-  <h2>Fintech</h2>
-  <p>
-    Senior Associate – KYC & Compliance Analyst<br>
-    Ensuring compliance, mitigating risk, and maintaining financial integrity.
-  </p>
+  <h2>Fintech Professional</h2>
+  <p>Senior Associate – KYC & Compliance Analyst</p>
 
   <button class="btn">Hire Me</button>
   <button class="btn">Download CV</button>
@@ -168,43 +171,49 @@ img{
 
 </section>
 
-<!-- ABOUT -->
+<!-- PROFESSIONAL SUMMARY -->
 <section class="section" id="about">
-<h2>About Me</h2>
+<h2>Professional Summary</h2>
 
 <div class="card">
-Detail-oriented compliance professional with 2+ years of experience in Customer Due Diligence (CDD),
-Ongoing Due Diligence (ODD), Name Screening, Sanctions Screening, and regulatory compliance within a fintech banking environment.
+Detail-oriented compliance professional with 2+ years of experience in Customer Due Diligence (CDD), Ongoing Due Diligence (ODD), Name Screening, Sanctions Screening, and regulatory compliance within a fintech banking environment.
 
 <br><br>
 
 Experienced in:
 <ul>
 <li>SME & Retail onboarding</li>
-<li>Risk profiling and transaction analysis</li>
+<li>Documentation verification</li>
+<li>Risk profiling</li>
+<li>Account maintenance</li>
+<li>Screening investigations</li>
 <li>AML-driven account closures</li>
-<li>Compliance investigations & escalation handling</li>
 </ul>
+
+Consistently meeting SLA targets with high-quality compliance standards.
 </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section class="section" id="experience">
-<h2>Experience</h2>
+<h2>Work Experience</h2>
 
 <div class="card">
 <h3>Senior Associate – KYC & Compliance Analyst</h3>
 <p>Concentrix (Client: Wio Bank – Fintech Bank) | Nov 2023 – Present</p>
 
 <ul>
-<li>Customer Due Diligence (CDD) for SME & Retail clients</li>
+<li>Conduct Customer Due Diligence (CDD) for SME & Retail clients</li>
 <li>KYC verification and documentation review</li>
+<li>Review ID proof, address proof, incorporation documents, beneficial ownership structures</li>
 <li>Periodic KYC reviews and Ongoing Due Diligence (ODD)</li>
-<li>Name Screening & Sanctions Screening (L1 & L2 cases)</li>
+<li>Account maintenance and profile updates</li>
+<li>Name Screening & Sanctions Screening (global watchlists & adverse media)</li>
+<li>Handled L1 & L2 screening alerts with strong quality</li>
 <li>Risk profiling based on geography, industry & transactions</li>
-<li>Source of Funds (SOF) & Source of Wealth (SOW) verification</li>
-<li>Handling RFIs and compliance escalations</li>
-<li>AML-driven account offboarding</li>
+<li>Review Source of Funds (SOF) & Source of Wealth (SOW)</li>
+<li>Handle Requests for Information (RFI) & escalations</li>
+<li>Support AML-based account offboarding</li>
 </ul>
 
 <p class="highlight">🏆 Employee of the Month – 98% SLA compliance</p>
@@ -218,9 +227,12 @@ Experienced in:
 
 <div class="card">
 <p><b>Employee of the Month</b></p>
-<p>Achieved 98% SLA compliance with high-quality AML case reviews.</p>
+<p>Awarded for achieving 98% SLA compliance and maintaining high-quality case reviews.</p>
 
-<img src="https://i.ibb.co/RG3VCcJ2/achievement.jpg">
+<div class="achievement">
+  <img src="https://i.ibb.co/RG3VCcJ2/achievement.jpg">
+</div>
+
 </div>
 </section>
 
@@ -239,36 +251,52 @@ Experienced in:
 <div class="card">Freshdesk</div>
 <div class="card">ThinkOwl</div>
 <div class="card">PassFort</div>
+<div class="card">Ingenious</div>
 
 <div class="card">MS Excel</div>
 <div class="card">MS Office</div>
 <div class="card">Outlook</div>
 
-<div class="card">ChatGPT</div>
 <div class="card">Copilot</div>
 <div class="card">Perplexity</div>
+<div class="card">ChatGPT</div>
 
 </div>
 </section>
 
 <!-- EDUCATION -->
-<section class="section">
-<h2>Education & Certifications</h2>
+<section class="section" id="education">
+<h2>Education</h2>
 
 <div class="card">
-<b>Bachelor of Arts (Hons) – Political Science</b><br>
-Delhi University (SOL) | 2021 – 2024
+Bachelor of Arts (Hons) – Political Science<br>
+Delhi University (School of Open Learning) | 2021 – 2024
+</div>
 
-<br><br>
+</section>
 
-<b>Certifications:</b>
+<!-- CERTIFICATIONS -->
+<section class="section">
+<h2>Certifications</h2>
+
+<div class="card">
 <ul>
-<li>AML, KYC & Compliance – Udemy</li>
-<li>Microsoft Excel Advanced – Udemy</li>
-<li>Tally ERP 9</li>
-<li>Go AKS – In Progress</li>
-<li>NISM AML – In Progress</li>
+<li>Anti-Money Laundering Concepts: AML, KYC & Compliance – Udemy</li>
+<li>Microsoft Excel: Beginner to Advanced – Udemy</li>
+<li>Diploma in Tally ERP 9</li>
+<li>Go AKS – KYC Specialist (In Progress)</li>
+<li>NISM Anti-Money Laundering Manager (CAML) – In Progress</li>
 </ul>
+</div>
+
+</section>
+
+<!-- LANGUAGES -->
+<section class="section">
+<h2>Languages</h2>
+
+<div class="card">
+English | Hindi
 </div>
 
 </section>
@@ -278,8 +306,8 @@ Delhi University (SOL) | 2021 – 2024
 <h2>Contact</h2>
 
 <div class="card">
-📞 9125242133<br>
-📧 tapantripathi03@gmail.com<br>
+📞 9125242133 / 8810268535<br>
+📧 tapantripathi03@gmail.com / tappantripathi613@gmail.com<br>
 🔗 linkedin.com/in/tapan-tripathi94456531a
 </div>
 
