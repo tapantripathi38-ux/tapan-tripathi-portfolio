@@ -3,126 +3,128 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tapan Tripathi | AML Specialist</title>
+<title>Tapan Tripathi | AML & Compliance Specialist</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
 }
 
-body {
-  background: #0a0a0a;
-  color: #fff;
+body{
+  background:#020617;
+  color:#fff;
 }
 
-/* NAV */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 25px 50px;
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:25px 60px;
+  background:rgba(2,6,23,0.8);
+  backdrop-filter:blur(10px);
+  position:sticky;
+  top:0;
 }
 
-nav h2 {
-  color: #d4af37;
+nav h2{
+  color:#38bdf8;
 }
 
-nav a {
-  color: #aaa;
-  margin-left: 20px;
-  text-decoration: none;
+nav a{
+  color:#aaa;
+  margin-left:20px;
+  text-decoration:none;
+}
+
+nav a:hover{
+  color:#38bdf8;
 }
 
 /* HERO */
-.hero {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1.2fr 1fr;
-  align-items: center;
-  padding: 0 50px;
+.hero{
+  display:grid;
+  grid-template-columns:1fr 1.2fr 1fr;
+  height:100vh;
+  align-items:center;
+  padding:0 60px;
 }
 
-.left-text h1 {
-  font-size: 70px;
-  color: #d4af37;
-  line-height: 1.1;
+.left h1{
+  font-size:60px;
+  color:#38bdf8;
 }
 
-.left-text p {
-  margin-top: 20px;
-  color: #aaa;
+.left p{
+  margin-top:15px;
+  color:#aaa;
 }
 
-.center-img img {
-  width: 350px;
-  border-radius: 10px;
-  transition: 0.4s;
+.center img{
+  width:350px;
+  border-radius:15px;
+  box-shadow:0 0 40px rgba(56,189,248,0.3);
 }
 
-.center-img img:hover {
-  transform: scale(1.05);
+.right{
+  text-align:right;
 }
 
-.right-text {
-  text-align: right;
+.right h2{
+  font-size:55px;
+  color:#38bdf8;
 }
 
-.right-text h2 {
-  font-size: 60px;
-  color: #d4af37;
+.right p{
+  margin-top:15px;
+  color:#aaa;
 }
 
-.right-text p {
-  margin-top: 20px;
-  color: #aaa;
+.btn{
+  padding:12px 25px;
+  border:1px solid #38bdf8;
+  color:#38bdf8;
+  background:transparent;
+  margin-top:20px;
+  margin-right:10px;
+  cursor:pointer;
 }
 
-.btn {
-  padding: 12px 25px;
-  border: 1px solid #d4af37;
-  color: #d4af37;
-  background: transparent;
-  margin-right: 10px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #d4af37;
-  color: black;
+.btn:hover{
+  background:#38bdf8;
+  color:black;
 }
 
 /* SECTION */
-.section {
-  padding: 80px 50px;
+.section{
+  padding:80px 60px;
 }
 
-.card {
-  background: #111;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
-  border: 1px solid #222;
+.card{
+  background:#0f172a;
+  padding:20px;
+  margin-top:20px;
+  border-radius:12px;
+  border:1px solid #1e293b;
 }
 
-.highlight {
-  color: #d4af37;
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 20px;
+.highlight{
+  color:#38bdf8;
 }
 
-.achievement-img {
-  width: 100%;
-  margin-top: 15px;
-  border-radius: 10px;
+img{
+  width:100%;
+  border-radius:10px;
 }
 </style>
 </head>
@@ -134,6 +136,7 @@ nav a {
   <h2>Tapan</h2>
   <div>
     <a href="#about">About</a>
+    <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </div>
@@ -142,76 +145,144 @@ nav a {
 <!-- HERO -->
 <section class="hero">
 
-  <div class="left-text">
-    <h1>Compliance<br>Meets<br>Trust</h1>
-    <p>KYC & AML Specialist</p>
-  </div>
+<div class="left">
+  <h1>Compliance<br>Meets Trust</h1>
+  <p>KYC & AML Specialist</p>
+</div>
 
-  <div class="center-img">
-    <!-- INTRO IMAGE -->
-    <img src="https://i.ibb.co/358rfhd4/your-image.jpg" alt="Tapan">
-  </div>
+<div class="center">
+  <!-- YOUR MAIN IMAGE -->
+  <img src="https://i.ibb.co/358rfhd4/your-image.jpg">
+</div>
 
-  <div class="right-text">
-    <h2>Fintech</h2>
-    <p>
-      Senior Associate – KYC Analyst<br><br>
-      Ensuring compliance and mitigating financial risks.
-    </p>
+<div class="right">
+  <h2>Fintech</h2>
+  <p>
+    Senior Associate – KYC & Compliance Analyst<br>
+    Ensuring compliance, mitigating risk, and maintaining financial integrity.
+  </p>
 
-    <div class="buttons">
-      <button class="btn">Hire Me</button>
-      <button class="btn">Download CV</button>
-    </div>
-  </div>
+  <button class="btn">Hire Me</button>
+  <button class="btn">Download CV</button>
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+<h2>About Me</h2>
+
+<div class="card">
+Detail-oriented compliance professional with 2+ years of experience in Customer Due Diligence (CDD),
+Ongoing Due Diligence (ODD), Name Screening, Sanctions Screening, and regulatory compliance within a fintech banking environment.
+
+<br><br>
+
+Experienced in:
+<ul>
+<li>SME & Retail onboarding</li>
+<li>Risk profiling and transaction analysis</li>
+<li>AML-driven account closures</li>
+<li>Compliance investigations & escalation handling</li>
+</ul>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+<h2>Experience</h2>
+
+<div class="card">
+<h3>Senior Associate – KYC & Compliance Analyst</h3>
+<p>Concentrix (Client: Wio Bank – Fintech Bank) | Nov 2023 – Present</p>
+
+<ul>
+<li>Customer Due Diligence (CDD) for SME & Retail clients</li>
+<li>KYC verification and documentation review</li>
+<li>Periodic KYC reviews and Ongoing Due Diligence (ODD)</li>
+<li>Name Screening & Sanctions Screening (L1 & L2 cases)</li>
+<li>Risk profiling based on geography, industry & transactions</li>
+<li>Source of Funds (SOF) & Source of Wealth (SOW) verification</li>
+<li>Handling RFIs and compliance escalations</li>
+<li>AML-driven account offboarding</li>
+</ul>
+
+<p class="highlight">🏆 Employee of the Month – 98% SLA compliance</p>
+</div>
 
 </section>
 
 <!-- ACHIEVEMENT -->
 <section class="section">
-  <h2 class="highlight">🏆 Recognition</h2>
-  <div class="card">
-    <p><b>Employee of the Month – October</b></p>
-    <p>
-      Awarded for achieving <span class="highlight">98% SLA compliance</span> 
-      and maintaining exceptional AML review quality.
-    </p>
+<h2>Recognition</h2>
 
-    <!-- ACHIEVEMENT IMAGE -->
-    <img class="achievement-img" src="https://i.ibb.co/RG3VCcJ2/achievement.jpg" alt="Award">
-  </div>
-</section>
+<div class="card">
+<p><b>Employee of the Month</b></p>
+<p>Achieved 98% SLA compliance with high-quality AML case reviews.</p>
 
-<!-- ABOUT -->
-<section class="section" id="about">
-  <h2>About Me</h2>
-  <div class="card">
-    Detail-oriented KYC Professional with 2+ years experience in AML,
-    CDD, ODD, sanctions screening, and fintech compliance.
-  </div>
+<img src="https://i.ibb.co/RG3VCcJ2/achievement.jpg">
+</div>
 </section>
 
 <!-- SKILLS -->
 <section class="section" id="skills">
-  <h2>Skills</h2>
-  <div class="grid">
-    <div class="card">AML Compliance</div>
-    <div class="card">KYC Verification</div>
-    <div class="card">Risk Assessment</div>
-    <div class="card">PEP Screening</div>
-    <div class="card">Napier</div>
-    <div class="card">MS Excel</div>
-  </div>
+<h2>Skills & Tools</h2>
+
+<div class="grid">
+
+<div class="card">AML Compliance</div>
+<div class="card">KYC Verification</div>
+<div class="card">Risk Assessment</div>
+<div class="card">PEP Screening</div>
+
+<div class="card">Napier</div>
+<div class="card">Freshdesk</div>
+<div class="card">ThinkOwl</div>
+<div class="card">PassFort</div>
+
+<div class="card">MS Excel</div>
+<div class="card">MS Office</div>
+<div class="card">Outlook</div>
+
+<div class="card">ChatGPT</div>
+<div class="card">Copilot</div>
+<div class="card">Perplexity</div>
+
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section">
+<h2>Education & Certifications</h2>
+
+<div class="card">
+<b>Bachelor of Arts (Hons) – Political Science</b><br>
+Delhi University (SOL) | 2021 – 2024
+
+<br><br>
+
+<b>Certifications:</b>
+<ul>
+<li>AML, KYC & Compliance – Udemy</li>
+<li>Microsoft Excel Advanced – Udemy</li>
+<li>Tally ERP 9</li>
+<li>Go AKS – In Progress</li>
+<li>NISM AML – In Progress</li>
+</ul>
+</div>
+
 </section>
 
 <!-- CONTACT -->
 <section class="section" id="contact">
-  <h2>Contact</h2>
-  <div class="card">
-    📞 9125242133<br>
-    📧 tapantripathi03@gmail.com<br>
-    🔗 linkedin.com/in/tapan-tripathi-94456531a
-  </div>
+<h2>Contact</h2>
+
+<div class="card">
+📞 9125242133<br>
+📧 tapantripathi03@gmail.com<br>
+🔗 linkedin.com/in/tapan-tripathi94456531a
+</div>
+
 </section>
 
 </body>
